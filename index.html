@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Internal CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Awesome Books</title>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="logo">
+            <span class="logo-left">killy</span>
+            &<span class="logo-right">Ashe</span>
+        </div>
+        <div>
+            <ul class="nav-link">
+                <li><a class="list nav-list blue" href="#">List</a></li>
+                <li><a class="add nav-list" href="#">Add new</a></li>
+                <li><a class="contact nav-list" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="date-now"></div>
+
+
+   
+    <section id="show-section">
+        <div id="books-section">
+            <h1>Awesome Books</h1>
+            <ul class="book-container">
+                <!-- content Goes here -->
+                <li class="book">"Book Title" by Sample Author <button type="button" class="remove">Remove</button></li>
+            </ul>   
+        </div>
+    </section>
+
+
+    <section id="book-section" class="active"> 
+        <div id="add-book-section">
+            <h2>Add a New Book</h2>
+            <form class="book-form">
+                <input type="text" name="title" class="title" placeholder="Title">
+                <input type="text" name="author" class="author" placeholder="Author">
+                <button type="submit" id="add-book-button">Add</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section id="contact-info" class="active">
+        <div class="contact-div">
+            <h1 class="contact-header">Contact Information</h1>
+            <p class="contact-par">Do have any questions or you just want to say "hello"?<br>
+               you can reach out to us!</p>
+               <ul class="contact-detail">
+                   <li class="detail-li">Our e-mail: asfyd42@gmail.com</li>
+                   <li class="detail-li">Our phone number: 0922426392</li>
+               </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h4>&copy; Ashe & Killy, 2022</h4>
+    </footer>
+        <!-- JavaScript -->
+        <script type="module" src="app.js"></script>
+</body>
+
+</html>
