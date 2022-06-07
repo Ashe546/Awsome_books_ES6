@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/* stylelint-disable csstree/validator */
+*,
+*::after,
+*::before {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+// Colors
+$success: #33ca7f;
+$danger: #e01541;
+$dark: #121614;
+$light: #a4b1aa;
+
+// box Shadow
+$boxs: 3px 5px 8px 2px;
+
+// transition
+$transition: all 250ms ease-out;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  place-items: center;
+  padding: 32px;
+  color: $dark;
+}
+// General styling for Buttons
+button {
+  box-shadow: $boxs rgba($dark, 0.2);
+  transition: $transition;
+  cursor: pointer;
+  padding: 10px;
+  width: 120px;
+  font-weight: 700;
+  border: 2px solid $dark;
+
+  &:hover {
+    outline: none;
+    border: 2px solid $light;
+    box-shadow: none;
+    background: $light;
+    color: #f2f2f2;
+  }
+}
+
+// Books Section (Book List)
+.book-container {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid $dark;
+
+  :nth-child(odd) {
+    background: #ddd;
+  }
+
+  li {
+    display: flex;
+    width: 690px;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+// Add a new book Section
+#add-book-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  gap: 20px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+
+    input {
+      flex: 1 1 80%;
+      border: 2px solid $light;
+      padding: 10px;
+      color: $dark;
+      width: 430px;
+      font-family: inherit;
+      font-size: inherit;
+    }
+  }
+}
