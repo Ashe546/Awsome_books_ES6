@@ -28,7 +28,7 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - open a terminal
-- run ` git clone git@github.com:mirwaisfarahi/Awesome-Books.git`
+- run ` git clone git@github.com:/Awesome-Books.git`
 - run ` cd Awesome-Books`
 - open index.html
 
